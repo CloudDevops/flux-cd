@@ -3,3 +3,6 @@ kind: Kustomization
 resources:
 # - webapp-loadbalancer.yaml
 - deployment.yaml
+images:
+- name: 160840381064.dkr.ecr.us-east-2.amazonaws.com/webapp
+#  newTag: 952f25f3553b1508a2ea301da036e4f810b7d0f7
