@@ -52,7 +52,7 @@ jobs:
     - name: Build & Push Image
       env:
         # ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        RELEASE_IMAGE: 193382206834.dkr.ecr.us-west-2.amazonaws.com/${{ env.ECR_REPOSITORY }}:${{ env.RELEASE_REVISION }}
+        RELEASE_IMAGE: public.ecr.aws/${{ env.ECR_REPOSITORY }}:${{ env.RELEASE_REVISION }}
       run: |
        # docker buildx create --use
         docker buildx build --tag ${{ env.RELEASE_IMAGE }} --push .
