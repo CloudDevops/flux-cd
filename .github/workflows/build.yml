@@ -59,7 +59,7 @@ jobs:
   
     - name: Set image tag
       run: |
-       #   cd deploy/base
+          cd kustomize
           kustomize edit set image public.ecr.aws/j2x1y3l5/$CONTAINER_IMAGE
           cat kustomization.yaml
           
