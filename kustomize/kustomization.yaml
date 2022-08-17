@@ -3,6 +3,7 @@ kind: Kustomization
 # - webapp-loadbalancer.yaml
 resources:
 - deployment.yaml
+- service.yaml
 images:
 - name: public.ecr.aws/j2x1y3l5/skafold
   newTag: e6cefa83dfcae14f3184299c4f3d2128b82d2f6d
