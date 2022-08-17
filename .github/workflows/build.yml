@@ -62,3 +62,18 @@ jobs:
        #   cd deploy/base
           kustomize edit set image public.ecr.aws/j2x1y3l5/$CONTAINER_IMAGE
           cat kustomization.yaml
+          
+    - name: Commit kustomization
+      run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -a -m "$CONTAINER_IMAGE"
+    # Add additional steps here like scanning of image/DevSecOps
+    - name: Push changes to main
+      uses: ad-m/github-push-action@master
+      with:
+          github_token: ${{ github.token }}
+          branch: ${{ github.ref }}
+          force: true
+          
+
