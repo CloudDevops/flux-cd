@@ -6,4 +6,3 @@ resources:
 images:
 - name: public.ecr.aws/j2x1y3l5/skafold
   newTag: ca6a244b10b546d1b284a6de58539ad83fd259c8
-- name: public.ecr.aws/j2x1y3l5/skafold:latest
