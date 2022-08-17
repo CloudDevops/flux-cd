@@ -5,4 +5,4 @@ resources:
 - deployment.yaml
 images:
 - name: public.ecr.aws/j2x1y3l5/skafold
-  newTag: c3762a3fe1dfa40eeccc776bf43d7b41b185945b
+  newTag: c3dffc54966ad7b16cd8ff5fbefeb5bc50d67e0f
