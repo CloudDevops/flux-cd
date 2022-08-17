@@ -1,8 +1,9 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-resources:
 # - webapp-loadbalancer.yaml
+resources:
 - deployment.yaml
 images:
+- name: public.ecr.aws/j2x1y3l5/skafold
+  newTag: ca6a244b10b546d1b284a6de58539ad83fd259c8
 - name: public.ecr.aws/j2x1y3l5/skafold:latest
-#  newTag: 952f25f3553b1508a2ea301da036e4f810b7d0f7
